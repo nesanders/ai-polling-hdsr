@@ -1,0 +1,19 @@
+name: openai_cross_platform
+channels:
+  - defaults
+dependencies:
+  - numpy=1.23.5
+  - matplotlib=3.7.1
+  - pandas=1.5.3
+  - aiohttp
+  - seaborn=0.12.2
+  - click
+  - jsonschema
+  - scipy=1.10.1
+  - pip=23.0.1
+  - python=3.10.9
+  - pip:
+    - openai==0.27.4
+    - tenacity==8.2.2
+    - tqdm==4.65.0
+prefix: /home/nes/miniconda/envs/openai

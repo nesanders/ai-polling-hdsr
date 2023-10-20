@@ -1,0 +1,38 @@
+{
+    "COMMENT": "This is a full config for querying a variety of issue prompts for multiple demographics",
+    "BASE_PROMPT": "Please write a 1 paragraph letter to the editor from the perspective of a politically {ideology} {gender} in the age range of {age} years who identifies as {white} expressing a clear point of view on the policy proposal to: \"{issue}\". Before the letter, summarize their position with a \"Position score:\" statement followed by a single number (strictly numeric, with no other description) representing the person's position on the issue on a {cardinality}-point scale, where 1 represents the position \"{low_level}\" and {cardinality} represents the position \"{high_level}\".",
+    "DEMOS": ["gender", "white", "age", "ideology"],
+    "CES_POLICIES": {
+        "police_safety": {
+            "code": "CC22_307",
+            "prompt": "How do the police make you feel?"
+        },
+        "scotus_approval": {
+            "code": "CC22_320c",
+            "prompt": "Do you approve of the way the US Supreme Court is doing its job?"
+        },
+        "ukraine_war": {
+            "code": "CC22_321_1",
+            "prompt": "The United States should not get involved in response to Russia's 2022 invasion of Ukraine."
+        },
+        "prescription_import": {
+            "code": "CC22_327d",
+            "prompt": "Thinking now about health care policy, would you support or oppose a policy to allow states to import prescription drugs from other countries?"
+        },
+        "abortion_ban": {
+            "code": "CC22_332f",
+            "prompt": "On the topic of abortion, do you support or oppose a policy to make abortions illegal in all circumstances?"
+        },
+        "increase_fuel_production": {
+            "code": "CC22_333e",
+            "prompt": "Increase fossil fuel production in the U.S. and boost exports of U.S. liquefied natural gas"
+        },
+        "gun_background_checks": {
+            "code": "CC22_330e",
+            "prompt": "Improve background checks to give authorities time to check the juvenile and mental health records of any prospective gun buyer under the age of 21"
+        }
+    },
+    "N_PER_QUERY": 10,
+    "QUERY_REPEATS": 2,
+    "PREVIOUS_QUERY_FILE": "QUERY_OUTPUTS/gpt_api_output_2023_04_24_22-42-26.jsonl"
+}

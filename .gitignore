@@ -1,0 +1,8 @@
+chatgpt_query*.log
+chatgpt_output*.txt
+chatgpt_output*.csv
+*.kate-swp
+geckodriver.log
+__pycache__
+.~lock.*
+SECRET*

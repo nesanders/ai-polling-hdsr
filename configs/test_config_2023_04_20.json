@@ -1,0 +1,13 @@
+{
+    "COMMENT": "This is a small test config for testing the basic logic of query_and_analyze_ces.py",
+    "BASE_PROMPT": "Please write a 1 paragraph letter to the editor from the perspective of a {gender} who identifies as {white} expressing a clear point of view on the policy proposal to: \"{issue}\". Before the letter, summarize their position with a \"Position score:\" statement followed by a single number (strictly numeric, with no other description) representing the person's position on the issue on a {cardinality}-point scale, where 1 represents the position \"{low_level}\" and {cardinality} represents the position \"{high_level}\".",
+    "DEMOS": ["gender", "white"],
+    "CES_POLICIES": {
+        "increase_fuel_production": {
+            "code": "CC22_333e",
+            "prompt": "Increase fossil fuel production in the U.S. and boost exports of U.S. liquefied natural gas"
+        }
+    },
+    "N_PER_QUERY": 10,
+    "QUERY_REPEATS": 2
+}
