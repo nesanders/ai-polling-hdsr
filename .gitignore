@@ -6,3 +6,8 @@ geckodriver.log
 __pycache__
 .~lock.*
 SECRET*
+LOGS
+PROMPTS
+PLOTS
+ces_data
+
