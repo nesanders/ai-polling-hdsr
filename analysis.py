@@ -152,6 +152,9 @@ def bar_plot(data_df: pd.DataFrame, demos: PromptOptionsType=PROMPT_OPTIONS,
     # Make the plot
     g = sns.FacetGrid(copy_df, col=keys[0], row=keys[1], margin_titles=True, hue=keys[-1] if len(keys)>2 else None,
         row_order=demos[keys[1]], col_order=demos[keys[0]], height=2, aspect=1)
+    plt.ylabel(None)
+    # Shorten column labels
+    g.set_titles(col_template="{col_name}")
     bar_order = list(product(*[demos[key] for i, key in enumerate(keys) if i > 1]))
     bar_order = ['; '.join(b) for b in bar_order]
     g.map_dataframe(plot_func, y="label", x="score", orient='h', order=bar_order, errorbar=('ci', 95), **kwargs)
