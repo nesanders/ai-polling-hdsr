@@ -2,7 +2,7 @@
 
 This repository contains some code for testing the hypothesis that large language models can be used to generate distributionally-realistic responses to questions about public policy.
 
-This code underlies the results presented in the paper [arxiv:2307.04781](https://arxiv.org/abs/2307.04781) (accepted for publication in the Harvard Data Science Review).
+This code underlies the results presented in the paper Sanders, N. E., Ulinich, A., & Schneier, B. (2023). [Demonstrations of the Potential of AI-based Political Issue Polling. Harvard Data Science Review, 5(4).](https://hdsr.mitpress.mit.edu/pub/dm2hrtx0/release/1?readingCollection=04d84e0d) ([DOI 10.1162/99608f92.1d3cf75d](https://doi.org/10.1162/99608f92.1d3cf75d) and on arXiv at [arxiv:2307.04781](https://arxiv.org/abs/2307.04781)).
 
 ## Usage
 
